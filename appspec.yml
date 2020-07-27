@@ -6,11 +6,11 @@ files:
 
 permissions:
   - object : /var/www/html/codedeploy
-  - pattern : "*"
-  - mode : 755
-  - owner : root
-  - group : root
-  -  type :
+    pattern : "*.sh"
+    owner : root
+    group : root
+    mode : 755
+    type :
       - file
 hooks:
   AfterInstall:
