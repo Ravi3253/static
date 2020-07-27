@@ -20,5 +20,5 @@ hooks:
     - location: codedeploy/after_install.sh
       timeout: 20
   ApplicationStart:
-    - location: codedeploy/after_install.sh
+    - location: codedeploy/app_start.sh
       timeout: 20
