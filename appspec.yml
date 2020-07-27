@@ -4,6 +4,9 @@ files:
   - source: /
     destination: /var/www/html
 
+  - source: test.conf
+    destination: /etc/apache2/sites-enabled
+
 permissions:
   - object : /var/www/html/codedeploy
     pattern : "*.sh"
