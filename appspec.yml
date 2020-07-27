@@ -2,11 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/
+    destination: /var/www/html
 
 permissions:
-  - object : /var/www/codedeploy
-  - pattern : "*.sh"
+  - object : /var/www/html/codedeploy
+  - pattern : "*"
   - mode : 755
   - owner : root
   - group : root
