@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/html
 
-  - source: test.conf
+  - source: vhost.conf
     destination: /etc/apache2/sites-enabled
 
 permissions:
@@ -21,4 +21,4 @@ hooks:
       timeout: 90
   ApplicationStart:
     - location: codedeploy/app_start.sh
-      timeout: 20
+      timeout: 30
