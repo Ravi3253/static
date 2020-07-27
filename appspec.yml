@@ -16,6 +16,9 @@ permissions:
     type :
       - file
 hooks:
+  BeforeInstall:
+    - location: codedeploy/before_install.sh
+
   AfterInstall:
     - location: codedeploy/after_install.sh
       timeout: 90
