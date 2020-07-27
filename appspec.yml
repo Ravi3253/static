@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/
+
+permissions:
+  - object : /var/www/codedeploy
+  - pattern : "*.sh"
+  - mode : 755
+  - owner : root
+  - group : root
+  -  type :
+      - file
+hooks:
+  AfterInstall:
+    - location: codedeploy/after_install.sh
+      timeout: 20
+  ApplicationStart:
+    - location: codedeploy/after_install.sh
+      timeout: 20
