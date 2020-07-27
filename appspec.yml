@@ -15,4 +15,10 @@ permissions:
     mode : 755
     type :
       - file
-
+hooks:
+  AfterInstall:
+    - location: codedeploy/after_install.sh
+      timeout: 20
+  ApplicationStart:
+    - location: codedeploy/after_install.sh
+      timeout: 20
