@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Addition</title>
+    <title>Static sites deployment test </title>
     </head>
     <body>
         <h3>Sum of 2 numbers</h3>
