@@ -1,0 +1,12 @@
+version: 0.2
+
+build:
+    commands:
+    - mkdir merge
+    - cd merge
+    - git init
+    - git config user.email "ravi.tejak2509@gmail.com"
+    - git config user.name "ravi325"
+    - git pull https://ravi325:Vinayaka%402509@bitbucket.org/ravi325/aws.git dev
+    - git push https://ravi325:Vinayaka%402509@bitbucket.org/ravi325/aws.git master
+
